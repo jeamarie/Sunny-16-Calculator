@@ -2,77 +2,77 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Sunny 16</title>
-  <link rel="stylesheet" href="styles.css">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sunny 16</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
-  
-  <div class="mainContainer container">
-    <div>
-      <h1>Sunny 16</h1>
-    </div>
-    <div class="illustrationContainer container">
-      <img class="illustration" src="https://picsum.photos/650/180?blur" />
-      <div>
-        <p id="lightingDetails">placeholder</p>
-      </div>
-    </div>
 
-    <div class="settingsContainer container">
-      <div class="sunnyMetrics">
-        <div class="lightingCondContainer">
-          <label for="lightingCondition">Lighting Condition:</label>
-          <select id="lightingCondition">
-            <option value="" disabled selected hidden>--</option>
-            <option value="clearAndSunny">Clear & Sunny</option>
-            <option value="slightlyOvercast">Slightly Overcast</option>
-            <option value="overcast">Overcast</option>
-            <option value="heavyOvercast">Heavy Overcast</option>
-            <option value="sunset">Sunset</option>
-          </select>
+    <div class="mainContainer container">
+        <div>
+            <h1>Sunny 16</h1>
+        </div>
+        <div class="illustrationContainer container">
+            <img class="illustration" src="https://picsum.photos/650/180?blur" />
+            <div>
+                <p id="lightingDetails">placeholder</p>
+            </div>
+        </div>
+
+        <div class="settingsContainer container">
+            <div class="sunnyMetrics">
+                <div class="lightingCondContainer">
+                    <label for="lightingCondition">Lighting Condition:</label>
+                    <select id="lightingCondition">
+                        <option value="" disabled selected hidden>--</option>
+                        <option value="clearAndSunny">Clear & Sunny</option>
+                        <option value="slightlyOvercast">Slightly Overcast</option>
+                        <option value="overcast">Overcast</option>
+                        <option value="heavyOvercast">Heavy Overcast</option>
+                        <option value="sunset">Sunset</option>
+                    </select>
+
+                </div>
+                <div class="filmSpdContainer">
+                    <label for="filmSpeed">Film Speed (ISO):</label>
+                    <select id="filmSpeed">
+                        <option value="" disabled selected hidden required>--</option>
+                        <option value="oneHunISO">100</option>
+                        <option value="twoHunISO">200</option>
+                        <option value="fourHunISO">400</option>
+                        <option value="eightHunISO">800</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="resultBtn">Set</button>
 
         </div>
-        <div class="filmSpdContainer">
-          <label for="filmSpeed">Film Speed (ISO):</label>
-          <select id="filmSpeed">
-            <option value="" disabled selected hidden required>--</option>
-            <option value="oneHunISO">100</option>
-            <option value="twoHunISO">200</option>
-            <option value="fourHunISO">400</option>
-            <option value="eightHunISO">800</option>
-          </select>
+
+        <div class="resultContainer container">
+            <div>
+                <p class="resultHeader">your camera settings:</p>
+            </div>
+            <div class="resultBoxes">
+                <div class="shutterSpeedBox resultBox">
+                    <p id="shutterSpeedResult">n</p>
+                    <p>Shutter Speed</p>
+                </div>
+                <div class="apertureBox resultBox">
+                    <p id="apertureResult">n</p>
+                    <p>Aperture</p>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <button id="resultBtn">Set</button>
-
     </div>
 
-    <div class="resultContainer container">
-      <div>
-        <p class="resultHeader">your camera settings:</p>
-      </div>
-      <div class="resultBoxes">
-        <div class="shutterSpeedBox resultBox">
-          <p id="shutterSpeedResult">n</p>
-          <p>Shutter Speed</p>
-        </div>
-        <div class="apertureBox resultBox">
-          <p id="apertureResult">n</p>
-          <p>Aperture</p>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
-
-  <script src="scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
