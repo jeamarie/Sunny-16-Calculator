@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;700;900&display=swap");
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 650px;
+  outline: 1px solid red;
+}
+
+.mainContainer {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.illustrationContainer {
+  background-color: #e8e5dc;
+  height: 180px;
+  border-radius: 20px 20px 0px 0px;
+  overflow: hidden;
+}
+
+#lightingDetails {
+  position: relative;
+  z-index: 2;
+}
+
+.settingsContainer {
+  background-color: white;
+}
+
+.sunnyMetrics {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.lightingCondContainer,
+.filmSpdContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 15px;
+}
+
+.filmSpdContainer {
+  display: flex;
+  flex-direction: column;
+}
+.resultHeader {
+  font-size: 20px;
+  margin: 5px;
+}
+
+#resultBtn {
+  background-color: yellow;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.resultContainer {
+  background-color: #e8e5dc;
+  /*   outline: 1px solid red; */
+  border-radius: 0px 0px 20px 20px;
+}
+
+.resultBoxes {
+  display: flex;
+  outline: 1px solid red;
+  justify-content: center;
+}
+
+.resultBox {
+  /*   box-sizing: border-box; */
+  background-color: yellow;
+  width: 130px;
+  height: 100px;
+  border-radius: 15px;
+  outline: 1px solid red;
+  margin: 10px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#shutterSpeedResult,
+#apertureResult {
+  font-size: 30px;
+  margin: 5px;
+}
+
+.resultBox p {
+  margin: 5px;
+}
