@@ -1,1 +1,1 @@
-# Sunny-16-Calculator
+I made this Sunny16 calculator to practice my basic knowledge on JavaScript and brush up my skills in HTML and CSS.
