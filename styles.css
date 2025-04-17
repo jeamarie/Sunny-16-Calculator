@@ -1,17 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tiny5:wght@400&display=swap");
 
 body {
-    font-family: "Josefin Sans", sans-serif;
+    font-family: "Tiny5", sans-serif;
+    color: #1b1212;
     margin: 0;
     box-sizing: border-box;
+    background-color: #fbf8ef;
 }
 
-.container {
-    max-width: 650px;
-    outline: 1px solid red;
+h1 {
+    font-family: "Tiny5", sans-serif;
+    font-size: 52px;
+    margin: 0px 0px 20px;
+    color: #ffca43;
 }
 
 .mainContainer {
+    background-color: #fbf8ef;
+    max-width: 650px;
     margin: 100px auto;
     display: flex;
     flex-direction: column;
@@ -21,7 +27,7 @@ body {
 .illustrationContainer {
     background-color: #e8e5dc;
     height: 180px;
-    border-radius: 20px 20px 0px 0px;
+    box-shadow: 0px -7px #1b1212, 7px 0px #1b1212, -7px 0px #1b1212;
     overflow: hidden;
     position: relative;
 }
@@ -34,16 +40,44 @@ body {
 
 #lightingDetails {
     position: relative;
+    font-size: 20px;
+    /*   color: #f7f2e0; */
+    color: black;
+    margin: 10px 0;
+    /*   mix-blend-mode: screen;
+  background-color: white; */
 }
 
 .settingsContainer {
-    background-color: white;
+    background-color: #ffcf55;
+    box-shadow: 7px 0px #1b1212, -7px 0px #1b1212;
+}
+
+.settingsLabel {
+    font-size: 22px;
+}
+
+select {
+    width: 200px;
+    font-family: "Tiny5", sans-serif;
+    font-size: 17px;
+    border: none;
+    background-color: #f7f2e0;
+    padding: 5px;
+    margin: 10px 0;
+    box-shadow: 0px 4px #f7f2e0, 0px -4px #f7f2e0, 4px 0px #f7f2e0,
+        -4px 0px #f7f2e0, 0px 10px #00000038, 4px 6px #00000038, -4px 6px #00000038;
+
+    /*   text-shadow: 0 0 5px #414a4c; */
+    &:focus {
+        outline: none;
+    }
 }
 
 .sunnyMetrics {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 15px;
 }
 
 .lightingCondContainer,
@@ -58,99 +92,68 @@ body {
     flex-direction: column;
 }
 
-.resultHeader {
-    font-size: 20px;
-    margin: 5px;
-}
-
 /* button styling */
 #resultBtn {
-    appearance: button;
-    background-color: #1899D6;
-    border: solid transparent;
-    border-radius: 16px;
-    border-width: 0 0 4px;
-    box-sizing: border-box;
-    color: #FFFFFF;
+    color: #fff;
+    background-color: #c8412a;
+    padding: 8px 35px;
+    margin: 10px;
+    font-family: "Tiny5", sans-serif;
+    font-size: 25px;
+    border: 0;
+    box-shadow: 0px 4px #1b1212, 0px -4px #1b1212, 4px 0px #1b1212,
+        -4px 0px #1b1212, 0px 10px #00000038, 4px 6px #00000038, -4px 6px #00000038,
+        inset 0px 5px #d87a69;
     cursor: pointer;
-    display: inline-block;
-    font-family: din-round,sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: .8px;
-    line-height: 20px;
-    margin: 0;
-    outline: none;
-    overflow: visible;
-    padding: 13px 16px;
-    text-align: center;
-    text-transform: uppercase;
-    touch-action: manipulation;
-    transform: translateZ(0);
-    transition: filter .2s;
     user-select: none;
-    -webkit-user-select: none;
-    vertical-align: middle;
-    white-space: nowrap;
-    width: 120px;
-  
-}
-
-#resultBtn:after {
-    background-clip: padding-box;
-    background-color: #1CB0F6;
-    border: solid transparent;
-    border-radius: 16px;
-    border-width: 0 0 4px;
-    bottom: -4px;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1;
-  }
-
-#resultBtn,
-#resultBtn:focus {
-  user-select: auto;
-}
-
-#resultBtn:hover:not(:disabled) {
-  filter: brightness(1.1);
-  -webkit-filter: brightness(1.1);
-}
-
-#resultBtn:disabled {
-  cursor: auto;
 }
 
 #resultBtn:active {
-  border-width: 4px 0 0;
-  background: none;
+    transform: translateY(4px);
+    box-shadow: 0px 4px #1b1212, 0px -4px #1b1212, 4px 0px #1b1212,
+        -4px 0px #1b1212, inset 0px 5px #d87a69;
+    transition: transform 35ms;
+}
+
+#resultBtn:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
+#resultBtn:disabled {
+    cursor: auto;
 }
 
 /* result container styling */
 
 .resultContainer {
-    background-color: #e8e5dc;
+    padding: 15px;
+    background-color: #ffcf55;
     /*   outline: 1px solid red; */
-    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 7px #1b1212, 7px 0px #1b1212, -7px 0px #1b1212,
+        0px 16px #00000038, 7px 10px #00000038, -7px 10px #00000038;
+}
+
+.resultHeader {
+    font-size: 22px;
+    margin: 10px;
+    /*   text-shadow: 0 0 2px #414a4c; */
 }
 
 .resultBoxes {
     display: flex;
-    outline: 1px solid red;
     justify-content: center;
+    gap: 20px;
 }
 
 .resultBox {
     /*   box-sizing: border-box; */
-    background-color: yellow;
+    background-color: #5ba4fd;
     width: 130px;
     height: 100px;
-    border-radius: 15px;
-    outline: 1px solid red;
+    box-shadow: 0px 4px #5ba4fd, 0px -4px #5ba4fd, 4px 0px #5ba4fd,
+        -4px 0px #5ba4fd, 0px 10px #00000038, 4px 6px #00000038, -4px 6px #00000038,
+        inset 0px 5px #8cbffd;
     margin: 10px 5px;
     display: flex;
     flex-direction: column;
@@ -160,10 +163,21 @@ body {
 
 #shutterSpeedResult,
 #apertureResult {
-    font-size: 30px;
+    font-size: 32px;
     margin: 5px;
+    color: #fdfcf8;
 }
 
 .resultBox p {
     margin: 5px;
+}
+
+.footer {
+    /*   position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /*   background-color: #ffe9b3; */
+    color: black;
+    text-align: center;
 }
