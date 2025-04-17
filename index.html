@@ -19,26 +19,26 @@
         <div class="illustrationContainer container">
             <img class="illustration" src="https://picsum.photos/650/180?blur" />
             <div>
-                <p id="lightingDetails">placeholder</p>
+                <p id="lightingDetails"></p>
             </div>
         </div>
 
         <div class="settingsContainer container">
             <div class="sunnyMetrics">
                 <div class="lightingCondContainer">
-                    <label for="lightingCondition">Lighting Condition:</label>
+                    <label for="lightingCondition" class="settingsLabel">LIGHTING CONDITION:</label>
                     <select id="lightingCondition">
                         <option value="" disabled selected hidden>--</option>
-                        <option value="clearAndSunny">Clear & Sunny</option>
-                        <option value="slightlyOvercast">Slightly Overcast</option>
-                        <option value="overcast">Overcast</option>
-                        <option value="heavyOvercast">Heavy Overcast</option>
-                        <option value="sunset">Sunset</option>
+                        <option value="clearAndSunny">CLEAR & SUNNY</option>
+                        <option value="slightlyOvercast">SLIGHTLY OVERCAST</option>
+                        <option value="overcast">OVERCAST</option>
+                        <option value="heavyOvercast">HEAVY OVERCAST</option>
+                        <option value="sunset">SUNSET</option>
                     </select>
 
                 </div>
                 <div class="filmSpdContainer">
-                    <label for="filmSpeed">Film Speed (ISO):</label>
+                    <label for="filmSpeed" class="settingsLabel">FILM SPEED (ISO):</label>
                     <select id="filmSpeed">
                         <option value="" disabled selected hidden required>--</option>
                         <option value="oneHunISO">100</option>
@@ -49,29 +49,29 @@
                 </div>
             </div>
 
-            <button id="resultBtn" role="button">Set</button>
+            <button id="resultBtn" role="button">SET</button>
 
         </div>
 
         <div class="resultContainer container">
             <div>
-                <p class="resultHeader">your camera settings:</p>
+                <p class="resultHeader">YOUR CAMERA SETTINGS:</p>
             </div>
             <div class="resultBoxes">
                 <div class="shutterSpeedBox resultBox">
                     <p id="shutterSpeedResult">n</p>
-                    <p>Shutter Speed</p>
+                    <p>SHUTTER SPEED</p>
                 </div>
                 <div class="apertureBox resultBox">
                     <p id="apertureResult">n</p>
-                    <p>Aperture</p>
+                    <p>APERTURE</p>
                 </div>
             </div>
         </div>
     </div>
-
-
-
+    <div class="footer">
+        <p>made by jea 🩷</p>
+    </div>
     <script src="scripts.js"></script>
 </body>
 
